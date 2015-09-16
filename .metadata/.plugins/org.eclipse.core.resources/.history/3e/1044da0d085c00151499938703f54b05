@@ -1,0 +1,31 @@
+package cn.labelnet.util;
+
+import java.util.Properties;
+
+import javax.xml.transform.ErrorListener;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.URIResolver;
+
+import android.support.v4.view.ViewPager.PageTransformer;
+import android.view.View;
+
+public class VpPageTransformer  {
+
+	public VpPageTransformer() {
+		// TODO Auto-generated constructor stub
+		
+		PageTransformer transformer=new PageTransformer() {
+			
+			@Override
+			public void transformPage(View arg0, float arg1) {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		
+	}
+	
+}

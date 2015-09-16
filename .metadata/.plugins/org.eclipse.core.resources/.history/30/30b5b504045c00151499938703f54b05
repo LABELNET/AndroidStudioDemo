@@ -1,0 +1,45 @@
+package cn.labelnet.viewpagerdemo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.view.ViewPager;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
+
+public class MainActivity extends Activity {
+
+	private ViewPager vp_welcome;
+
+	private int[] ids = { R.drawable.pic1, R.drawable.pic10, R.drawable.pic4,
+			R.drawable.pic8 };
+
+	List<ImageView> imglist;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		vp_welcome = (ViewPager) findViewById(R.id.vp_welcome);
+		imglist = new ArrayList<ImageView>();
+
+		InitDataAndView();
+
+	}
+
+	private void InitDataAndView() {
+		//添加view 和 显示
+		for(int i=0;i<ids.length;i++){
+			ImageView imageView=new ImageView(this);
+			imageView.setImageResource(ids[i]);
+			imageView.setScaleType(ScaleType.FIT_XY);
+		}
+		
+		
+		
+	}
+}
