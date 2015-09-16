@@ -1,0 +1,32 @@
+package cn.labelnet.adapter;
+
+import android.support.v4.view.PagerAdapter;
+import android.view.View;
+
+public class VpWelcomeAdapter extends PagerAdapter {
+	
+	@Override
+	public Object instantiateItem(View container, int position) {
+		// TODO Auto-generated method stub
+		return super.instantiateItem(container, position);
+	}
+
+	@Override
+	public void destroyItem(View container, int position, Object object) {
+		// TODO Auto-generated method stub
+		super.destroyItem(container, position, object);
+	}
+	
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isViewFromObject(View arg0, Object arg1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
