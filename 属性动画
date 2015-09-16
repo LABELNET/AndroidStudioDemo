@@ -1,0 +1,84 @@
+1.属性动画
+ Animator 
+  传统动画 Animation
+2.Animation 局限性
+  只是重绘了画面,而没有改变控件属性;
+3.ObjectAnimator
+   ObjectAnimator.ofFloat(操作的对象,操作的动画,变化范围)
+   .setDuration()
+   .start();
+
+  参数: rotation
+        translationX
+        translationY
+
+4.PropertyValuesHolder
+  多个属性集合holder
+  PropertyValuesHolder.pfFloat();
+
+5.AnimatorSet 
+  多个动画集合
+  AnimatorSet  set=new AnimatorSet();
+   //同时执行
+  .playTogether(属性集合/ObjectAnimator);
+   //依次执行
+  .playSequentially(ObjectAnimator items);
+  .setDuration(时间);
+  .start();
+
+  顺序控制:
+  .play().with().after().before();
+
+6.动画监听事件
+  //过程监听
+  new AnimatorListener()
+  //某个过程监听
+  new AnimatorListenerAdapter()
+
+
+7.ValueAnimator 
+  是什么?
+  数值产生器;
+  怎么用?
+  ValueAnimator.ofInt();
+  AnimatorUpdateListener
+
+  ValueAnimator.ofObject();
+  TypeEvaluator<pointF>
+
+8.插值器
+AccelerateDecelerateInterpolator
+:开始与结束的地方速率改变比较慢，在中间的时候加速
+
+ AccelerateInterpolator
+:开始的地方速率改变比较慢，然后开始加速
+
+ AnticipateInterpolator
+:开始的时候向后然后向前甩
+
+AnticipateOvershootInterpolator
+:开始的时候向后然后向前甩一定值后返回最后的值
+
+LinearInterpolator
+:以常量速率改变
+
+ DecelerateInterpolator
+:在开始的地方快然后慢
+
+ BounceInterpolator
+:动画结束的时候弹起
+
+ OvershootInInterpolator
+:向前甩一定值后再回到原来位置
+
+ CycleInterpolator
+:循环播放特定的次数，速率改变沿着正弦曲线
+
+
+
+
+
+
+
+
+
