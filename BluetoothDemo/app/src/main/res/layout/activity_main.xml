@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/btn_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否支持蓝牙?" />
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前蓝牙的状态?" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭蓝牙" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="蓝牙操作"
+        android:id="@+id/btn_play" />
+
+
+</LinearLayout>

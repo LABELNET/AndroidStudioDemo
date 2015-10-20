@@ -1,0 +1,15 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="zhu_color">#2bcfb2</color>
+
+    <color name="fu_color">#ff518a</color>
+
+    <color name="text_color">#e8f3f1</color>
+
+
+    <color name="zhushen_color">#2bc</color>
+
+    <color name="white_color">#eee</color>
+</resources>
