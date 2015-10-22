@@ -1,18 +1,17 @@
 package labelnet.cn.ledou;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.view.Window;
+import android.support.v7.app.AppCompatActivity;
 
 import com.romainpiel.shimmer.Shimmer;
 import com.romainpiel.shimmer.ShimmerTextView;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
 
     SharedPreferences spre=null;
@@ -25,7 +24,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         //设置没有title
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+       // requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_main);
 
@@ -73,7 +72,7 @@ public class MainActivity extends Activity {
     private  void initMethod(){
         //Log.i("LeDou",spre.getInt("once",0)+"");
         //延时操作
-        handler.sendEmptyMessageDelayed(0, 3000);
+        handler.sendEmptyMessageDelayed(0, 1000);
 
     }
 

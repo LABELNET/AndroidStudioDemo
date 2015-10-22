@@ -1,15 +1,15 @@
 <resources>
 
-    <style name="FullscreenTheme" parent="android:Theme.Holo">
-        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@null</item>
-        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
-        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
-    </style>
 
-    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
-        <item name="android:background">@color/black_overlay</item>
+
+
+
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <!--全屏设置使得，跨越状态栏-->
+        <item name="android:windowTranslucentStatus">true</item>
+
+
     </style>
 
 </resources>

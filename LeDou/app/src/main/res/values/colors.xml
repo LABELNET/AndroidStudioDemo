@@ -12,4 +12,10 @@
     <color name="zhushen_color">#2bc</color>
 
     <color name="white_color">#eee</color>
+
+
+
+    <color name="material_blue_500">#009688</color>
+    <color name="material_blue_700">#00796B</color>
+    <color name="material_green_A200">#FD87A9</color>
 </resources>

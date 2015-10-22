@@ -1,11 +1,10 @@
 package labelnet.cn.ledou;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -15,7 +14,7 @@ import java.util.List;
 import labelnet.cn.ledou.adpater.ViewPagerAdapter;
 import labelnet.cn.ledou.anim.DepthPageTransformer;
 
-public class WelcomeActivity extends Activity {
+public class WelcomeActivity extends AppCompatActivity {
 
     private Button btn_welcome;
     private ViewPager vp_welcome;
@@ -28,7 +27,7 @@ public class WelcomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //设置没有title
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+       // requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_welcome);
 
@@ -49,6 +48,7 @@ public class WelcomeActivity extends Activity {
 
         //设置适配器
         ViewPagerAdapter pagerAdapter=new ViewPagerAdapter(imagesids,this);
+        //设置 切换动画
         vp_welcome.setPageTransformer(true, new DepthPageTransformer());
 
         vp_welcome.setAdapter(pagerAdapter);
