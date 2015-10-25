@@ -20,13 +20,30 @@
             android:layout_height="50dp"
             android:background="?attr/colorPrimary"
             android:fitsSystemWindows="true"
+            android:layout_marginTop="16dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="原明卓" />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="top"-->
+            <!--android:text="原明卓" />-->
+
+         <android.support.v4.widget.SwipeRefreshLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:scrollbarStyle="outsideInset"
+             android:id="@+id/swipe_refresh">
+
+             <ListView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/refsh_listview">
+
+             </ListView>
+
+         </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>
 
